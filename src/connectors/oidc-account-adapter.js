@@ -32,7 +32,7 @@ export const findAccount = async (ctx, sub, token) => {
       } = user;
 
       return {
-        sub: id, // it is essential to always return a sub claim
+        sub: id.toString(), // it is essential to always return a sub claim
         email,
         email_verified,
         updated_at,
